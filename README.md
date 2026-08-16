@@ -6,17 +6,17 @@
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)
 ![Riverpod](https://img.shields.io/badge/Riverpod-54A3D8?style=flat&logo=riverpod&logoColor=white)
 
-VS Code extension for quickly generating customizable **Riverpod 3** modules for Flutter projects.
+Extensión para VS Code que permite generar rápidamente módulos personalizables de **Riverpod 3** para proyectos Flutter.
 
-## Usage
+## Uso
 
-Select a folder from the Explorer:
+Desde el Explorer de VS Code, selecciona una carpeta:
 
 ```text
-Right click → Create Riverpod Module
+Click derecho → Create Riverpod Module
 ```
 
-Choose a module style:
+Selecciona el tipo del módulo:
 
 ```text
 Single file
@@ -24,7 +24,7 @@ Part files
 Separate files
 ```
 
-Enter the module name:
+Ingresa el nombre del módulo:
 
 ```text
 roxy
@@ -32,13 +32,13 @@ roxy
 
 ### Single file
 
-Generates:
+Genera:
 
 ```text
 roxy_provider.dart
 ```
 
-Containing:
+Conteniendo:
 
 - `RoxyState`
 - `RoxyNotifier`
@@ -46,7 +46,7 @@ Containing:
 
 ### Part files
 
-Generates:
+Genera:
 
 ```text
 roxy_provider.dart
@@ -54,11 +54,11 @@ roxy_state.dart
 roxy_notifier.dart
 ```
 
-Using Dart `part` / `part of`.
+Utilizando `part` / `part of` de Dart.
 
 ### Separate files
 
-Generates:
+Genera:
 
 ```text
 roxy_provider.dart
@@ -66,10 +66,10 @@ roxy_state.dart
 roxy_notifier.dart
 ```
 
-Using standard Dart imports.
+Utilizando imports estándar de Dart.
 
-The module name automatically determines the file, class, and provider names.
+El nombre del módulo determina automáticamente los nombres de los archivos, clases y providers generados.
 
-## License
+## Licencia
 
 MIT
