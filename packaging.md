@@ -1,19 +1,19 @@
-# Package the extension
+# Empaquetar la extensión
 
-Install `vsce` if it is not already installed:
+Instala `vsce` si aún no está instalado:
 
 ```bash
 npm install --save-dev @vscode/vsce
 ```
 
-Create the `.vsix` package:
+Genera el paquete .vsix:
 
 ```bash
 npx vsce package
 ```
 
-This generates a file similar to:
+Esto generará un archivo similar a:
 
 ```text
-riverpod-module-generator-0.1.0.vsix
+riverpod-module-generator-<version>.vsix
 ```
