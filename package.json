@@ -9,8 +9,8 @@
   },
   "name": "riverpod-module-generator",
   "displayName": "Riverpod Module Generator",
-  "description": "Generate customizable Riverpod 3 modules for Flutter projects.",
-  "version": "0.0.1",
+  "description": "Genera módulos personalizables de Riverpod 3 para proyectos Flutter.",
+  "version": "0.0.2",
   "license": "MIT",
   "engines": {
     "vscode": "^1.125.0"
