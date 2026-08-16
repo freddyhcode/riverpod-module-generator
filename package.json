@@ -1,0 +1,63 @@
+{
+  "publisher": "freddyhcode",
+  "author": {
+    "name": "Freddy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freddyhcode/riverpod-module-generator"
+  },
+  "name": "riverpod-module-generator",
+  "displayName": "Riverpod Module Generator",
+  "description": "Generate customizable Riverpod 3 modules for Flutter projects.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.125.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "riverpod-module-generator.createRiverpodModule",
+        "title": "Create Riverpod Module"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "riverpod-module-generator.createRiverpodModule",
+          "when": "explorerResourceIsFolder",
+          "group": "flutter"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "24.x",
+    "@types/vscode": "^1.125.0",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.0.0",
+    "@vscode/vsce": "^3.9.2",
+    "eslint": "^10.5.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.61.1"
+  },
+  "overrides": {
+    "diff": "^8.0.4",
+    "serialize-javascript": "^7.0.6"
+  }
+}
